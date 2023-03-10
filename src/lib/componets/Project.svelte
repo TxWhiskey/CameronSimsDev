@@ -127,7 +127,7 @@
         }
     }
 
-    @media (min-width: 500px) {
+    @media (min-width: 700px) {
         .vert-bar {
             display: none;
         }
