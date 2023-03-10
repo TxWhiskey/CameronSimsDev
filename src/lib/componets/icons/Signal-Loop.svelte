@@ -7,7 +7,7 @@
   <svg
     viewBox="0 0 55 39.687433"
     xmlns="http://www.w3.org/2000/svg"
-    height="100%"
+    height='100%'
   >
     <g
       fill="none"
@@ -114,4 +114,10 @@
       transform: rotate(180deg);
     }
   }
+  
+  @media (max-width: 500px) {
+    
+  }
+
+
 </style>

@@ -12,7 +12,7 @@
         <p>Location:<br>Houston, TX</p>
         <div class="sig-bounce">
             <WorldMapLoop size="5rem"/>
-            <SignalLoop />
+            <SignalLoop size="5rem"/>
             <SatIcon size="5rem"/>
         </div>
     </div>
@@ -31,11 +31,16 @@
 
     .sig-bounce {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: auto;
         gap: 1rem;
         width: 100%;
+        margin: auto;
+    }
+
+    @media (max-width: 700px) {
+        .sig-bounce {
+            justify-content: center;
+            padding: 1rem;
+        }
     }
 
 </style>

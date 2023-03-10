@@ -197,13 +197,27 @@
             flex-direction: column;
         }
 
-        #projects {
-            display: none;
+        #social {
+            order: 1;
         }
+
+        #contact {
+            order: 2;
+        }
+
+        #projects {
+            order: 3;
+        }
+
 
         #resources {
+            order: 4;
         }
 
+        #terminal {
+            display: none;
+        }
+        
         #greeble-1 {
             display: none;
         }
@@ -212,8 +226,8 @@
             display: none;
         }
 
-        #terminal {
-            height: 500px;
+        .job-title {
+            display: none;
         }
     }
 
