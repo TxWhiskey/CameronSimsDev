@@ -27,11 +27,11 @@
             <h5>Description</h5>
             <p class='content'>{project.description}</p>
         </div>
-        <div class="container-part">
+        <div class="container-part" id='role'>
             <h5>Role</h5>
             <p class='content'>{project.role}</p>
         </div>
-        <div class="container-part">
+        <div class="container-part" id='tags'>
             <h5>Tags</h5>
             <ul class="list">
                 {#each project.tags as tag}
@@ -39,7 +39,7 @@
                 {/each}
             </ul>
         </div>
-        <div class="container-part">
+        <div class="container-part" id='tech'>
             <h5>Tech</h5>
             <ul class="list">
                 {#each project.techStack as tech}
@@ -133,6 +133,10 @@
             max-height: 500px;
         }
         .vert-bar {
+            display: none;
+        }
+
+        #role, #tags, #tech {
             display: none;
         }
     }
