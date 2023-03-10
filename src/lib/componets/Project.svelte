@@ -127,7 +127,11 @@
         }
     }
 
-    @media (min-width: 700px) {
+    @media (max-width: 700px) {
+
+        .container-content {
+            max-height: 500px;
+        }
         .vert-bar {
             display: none;
         }
