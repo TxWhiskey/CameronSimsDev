@@ -1,0 +1,18 @@
+:root {
+    --brand-font: 'IBM Plex Mono', monospace;
+
+    --grey-05: hsl( 0, 0%, 5%);
+    --grey-10: hsl( 0, 0%, 10%);
+    --grey-20: hsl( 0, 0%, 20%);
+    --grey-30: hsl( 0, 0%, 30%);
+    --grey-70: hsl( 0, 0%, 70%);
+    --grey-80: hsl( 0, 0%, 80%);
+    --grey-90: hsl( 0, 0%, 90%);
+    --grey-95: hsl( 0, 0%, 95%);
+
+    --color-vdark: var(--grey-05);
+    --color-dark: var(--grey-20);
+    --color-mid: var(--grey-70);
+    --color-light: var(--grey-80);
+    --color-vlight: var(--grey-90);
+}
