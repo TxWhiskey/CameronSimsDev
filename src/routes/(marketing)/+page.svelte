@@ -185,4 +185,36 @@
         }
     }
 
+    @media (max-width: 700px) {
+        #grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            height: unset;
+        }
+
+        .button-group {
+            flex-direction: column;
+        }
+
+        #projects {
+            display: none;
+        }
+
+        #resources {
+        }
+
+        #greeble-1 {
+            display: none;
+        }
+
+        #image {
+            display: none;
+        }
+
+        #terminal {
+            height: 500px;
+        }
+    }
+
 </style>

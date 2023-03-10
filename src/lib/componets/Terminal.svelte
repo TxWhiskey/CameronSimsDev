@@ -8,15 +8,9 @@
     ]
 
     onMount( async () => {
-        figlet.text('Welcome User', {font: 'Slant'}, (err, data) => {
-            if (err) {
-                console.log('Something went wrong...');
-                console.dir(err);
-                return;
-            }            
-            terminalFeed.push({ text: data || 'Welcome User', type: 'system'})
-            terminalFeed = terminalFeed
-        })
+
+        terminalFeed.push({ text: 'Welcome User', type: 'system'})
+        terminalFeed = terminalFeed
     })
 
     let inputText: string = ""
