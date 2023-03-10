@@ -12,6 +12,7 @@
     stroke="#FFFFFF"
     stroke-width="{stroke}"
     vector-effect="non-scaling-stroke"
+    height="100%"
 >
   <path
     vector-effect="non-scaling-stroke"

@@ -20,6 +20,7 @@
     .container {
         display: flex;
         align-items: center;
+        overflow: hidden;
     }
 
     .scroll-parent {
@@ -29,10 +30,11 @@
         align-items: center;
         aspect-ratio: 1;
         width: 100%;
+        isolation: isolate;
     }
 
     .scroll-element {
-        min-height: 100%;
+        height: 100%;
         min-width: 150%;
         display: flex;
         align-items: center;
