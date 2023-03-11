@@ -167,6 +167,7 @@
 }
 .crt {
   animation: textShadow 4s infinite;
+  position: relative;
 }
 
 </style>

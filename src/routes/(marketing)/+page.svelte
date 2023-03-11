@@ -24,24 +24,6 @@
         </GridModule>
     </div>
 
-    <div class="grid-area" id="terminal">
-        <GridModule gridHeader="Terminal" moduleId="terminal">
-            <Terminal/>
-        </GridModule>
-    </div>
-
-    <div class="grid-area" id='projects'>
-        <GridModule gridHeader="Projects" moduleId="projects">
-            <ProjectList/>
-        </GridModule>
-    </div>
-    
-    <div class="grid-area" id="resources">
-        <GridModule gridHeader="Resources" moduleId="resources">
-            <Resources/>
-        </GridModule>
-    </div>
-    
     <div class="grid-area" id="social">
         <div class="button-group">
             <a 
@@ -60,39 +42,48 @@
             </a>
         </div>
     </div>
-    
-    <div class="grid-area" id="greeble-1">
-        <FlickerBlocks/>
-    </div>
 
+    <div class="grid-area" id='contact'>
+        <Contact/>
+    </div>
+    
     <div class="grid-area" id='image'>
         <GridModule moduleId="image">
             <Image/>
         </GridModule>
     </div>
 
-    <div class="grid-area" id='contact'>
-        <Contact/>
+    <div class="grid-area" id='projects'>
+        <GridModule gridHeader="Projects" moduleId="projects">
+            <ProjectList/>
+        </GridModule>
+    </div>
+    
+    <div class="grid-area" id="terminal">
+        <GridModule gridHeader="Terminal" moduleId="terminal">
+            <Terminal/>
+        </GridModule>
     </div>
 
+    <div class="grid-area" id="greeble-1">
+        <FlickerBlocks/>
+    </div>
+
+    <div class="grid-area" id="resources">
+        <GridModule gridHeader="Resources" moduleId="resources">
+            <Resources/>
+        </GridModule>
+    </div>
+    
 </div>
 
 <style>
 
     #grid {
-        display: grid;
-        grid-template-columns: auto 20rem;
-        grid-template-rows: min-content min-content 1fr 20rem 20rem;
-        grid-template-areas: 
-            "title social" 
-            "terminal greeble-1"
-            "terminal resources"
-            "projects image"
-            "projects contact";
-        height: 100vh;
+        display: flex;
+        flex-direction: column;
         gap: 1rem;
-        padding: 1rem;
-        overflow: hidden;
+        padding: .5rem;
     }
 
     .grid-area {
@@ -114,12 +105,15 @@
         font-size: 1.5rem;
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex: 1;
         gap: 1rem;
     }
 
     .job-title {
         color: var(--color-mid);
         font-size: 1rem;
+        display: none;
     }
 
     .icon-container {
@@ -132,6 +126,7 @@
     #terminal {
         grid-area: terminal;
         overflow: hidden;
+        display: none;
     }
 
     #projects {
@@ -155,6 +150,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: .5rem;
     }
 
     #resources {
@@ -173,62 +169,9 @@
         grid-area: contact;
     }
 
-    @media (min-width: 1800px) {
-        #grid {
-            grid-template-columns: 1fr 1fr 20rem;
-            grid-template-areas: 
-            "title title social" 
-            "terminal projects greeble-1"
-            "terminal projects resources"
-            "terminal projects image"
-            "terminal projects contact";
-        }
-    }
+    @media (min-width: 400px) {}
 
-    @media (max-width: 700px) {
-        #grid {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            height: unset;
-        }
+    @media (min-width: 1800px) {}
 
-        .button-group {
-            flex-direction: column;
-        }
-
-        #social {
-            order: 1;
-        }
-
-        #contact {
-            order: 2;
-        }
-
-        #projects {
-            order: 3;
-        }
-
-
-        #resources {
-            order: 4;
-        }
-
-        #terminal {
-            display: none;
-        }
-        
-        #greeble-1 {
-            display: none;
-        }
-
-        #image {
-            display: none;
-        }
-
-        .job-title {
-            display: none;
-        }
-    }
 
 </style>

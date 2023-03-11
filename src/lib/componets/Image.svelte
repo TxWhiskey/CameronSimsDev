@@ -18,15 +18,19 @@
     .container {
         position: relative;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
     }
 
     img {
-        height: 100%;
-        width: 100%;
+        min-width: 100%;
+        min-height: 100%;
         filter: contrast(180%) brightness(75%);
         position: relative;
         z-index: 1;
-        display: block;
     }
 
     .glitch-layers {

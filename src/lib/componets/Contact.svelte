@@ -34,11 +34,11 @@
         gap: 1rem;
         width: 100%;
         margin: auto;
+        justify-content: center;
     }
 
     @media (max-width: 700px) {
         .sig-bounce {
-            justify-content: center;
             padding: 1rem;
         }
     }

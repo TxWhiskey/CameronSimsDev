@@ -15,6 +15,10 @@
     font-size: 1rem;
 }
 
+body {
+    line-height: 1.25rem;
+}
+
 ::-webkit-scrollbar {
     width: 1rem;
 }

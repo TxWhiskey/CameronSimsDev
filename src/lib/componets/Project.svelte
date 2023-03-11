@@ -19,33 +19,35 @@
         <div class="vert-bar-fill"></div>
     </div>
     <div class="container-content">
-        <div class="container-part">
-            <h5>Title</h5>
-            <p class='content'>{project.title}</p>
-        </div>
-        <div class="container-part">
-            <h5>Description</h5>
-            <p class='content'>{project.description}</p>
-        </div>
-        <div class="container-part" id='role'>
-            <h5>Role</h5>
-            <p class='content'>{project.role}</p>
-        </div>
-        <div class="container-part" id='tags'>
-            <h5>Tags</h5>
-            <ul class="list">
-                {#each project.tags as tag}
-                <li class='content list-item'>{tag}</li>
-                {/each}
-            </ul>
-        </div>
-        <div class="container-part" id='tech'>
-            <h5>Tech</h5>
-            <ul class="list">
-                {#each project.techStack as tech}
-                <li class='content list-item'>{tech}</li>
-                {/each}
-            </ul>
+        <div class="project-details">
+            <div class="container-part">
+                <h5>Title</h5>
+                <p class='content'>{project.title}</p>
+            </div>
+            <div class="container-part">
+                <h5>Description</h5>
+                <p class='content'>{project.description}</p>
+            </div>
+            <div class="container-part" id='role'>
+                <h5>Role</h5>
+                <p class='content'>{project.role}</p>
+            </div>
+            <div class="container-part" id='tags'>
+                <h5>Tags</h5>
+                <ul class="list">
+                    {#each project.tags as tag}
+                    <li class='content list-item'>{tag}</li>
+                    {/each}
+                </ul>
+            </div>
+            <div class="container-part" id='tech'>
+                <h5>Tech</h5>
+                <ul class="list">
+                    {#each project.techStack as tech}
+                    <li class='content list-item'>{tech}</li>
+                    {/each}
+                </ul>
+            </div>
         </div>
         <div class="button-group">
             <!-- <a href="" class='button-link'>More Detail</a>
@@ -68,6 +70,7 @@
     }
 
     .vert-bar {
+        display: none;
         border: 2px solid var(--color-vlight);
         min-width: 1rem;
         height: 100%;
@@ -86,6 +89,14 @@
         height: 100%;
     }
 
+    .project-details {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: 500px;
+        overflow: auto;
+    }
+
     .container-part {
         display: flex;
         flex-direction: column;
@@ -98,6 +109,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 1rem;
+    }
+
+    button {
+        flex: 1;
     }
 
     h5 {
@@ -127,18 +142,6 @@
         }
     }
 
-    @media (max-width: 700px) {
-
-        .container-content {
-            max-height: 500px;
-        }
-        .vert-bar {
-            display: none;
-        }
-
-        #role, #tags, #tech {
-            display: none;
-        }
-    }
+    @media (max-width: 700px) {}
 
 </style>
