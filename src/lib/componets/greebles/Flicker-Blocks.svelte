@@ -1,6 +1,6 @@
 <script lang='ts'>
-  import FlickerBlock from "./Flicker-Block.svelte";
-
+  
+    import FlickerBlock from "./Flicker-Block.svelte";
 
     export let blocks: number = 6
     export let blockHeight: number = 2.5
@@ -26,6 +26,7 @@
 
     .container {
         display: flex;
+        width: 100%
     }
 
 </style>

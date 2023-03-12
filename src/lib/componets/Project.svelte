@@ -78,7 +78,7 @@
 
     .vert-bar-fill {
         background-color: var(--color-vlight);
-        animation: progress 10s linear;
+        animation: progress 15s linear;
     }
 
     .container-content {
@@ -87,6 +87,7 @@
         gap: 1rem;
         overflow: auto;
         height: 100%;
+        width: 100%;
     }
 
     .project-details {
@@ -94,6 +95,7 @@
         flex-direction: column;
         gap: 1rem;
         height: 500px;
+        width: 100%;
         overflow: auto;
     }
 
@@ -142,6 +144,15 @@
         }
     }
 
-    @media (max-width: 700px) {}
+    @media (min-width: 500px) {
+        .vert-bar {
+            display: block;
+        }
+
+        .project-details {
+            overflow: auto;
+            height: unset;
+        }
+    }
 
 </style>

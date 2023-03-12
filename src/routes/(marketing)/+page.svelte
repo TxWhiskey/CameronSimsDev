@@ -169,9 +169,130 @@
         grid-area: contact;
     }
 
-    @media (min-width: 400px) {}
+    @media (min-width: 500px) {
 
-    @media (min-width: 1800px) {}
+        #grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 
+                auto
+                auto
+                1fr
+                auto
+                auto
+                auto
+            ;
+            grid-template-areas: 
+                "title           title"
+                "greeble-1       image"
+                "social          image"
+                "contact         contact"
+                "projects        projects"
+                "resources       resources"
+            ;
+        }
 
+        .button-group {
+            flex-direction: column;
+        }
+
+    }
+
+    @media (min-width: 750px) {
+
+        #grid {
+            grid-template-rows: 
+                auto
+                auto
+                auto
+                400px
+                auto
+                auto
+            ;
+            grid-template-areas: 
+                "title title"
+                "social image"
+                "contact image"
+                "resources terminal"
+                "greeble-1 terminal"
+                "projects projects"
+            ;
+        }
+
+        #terminal {
+            display: block;
+        }
+
+    }
+
+    @media (min-width: 1000px) {
+
+        #grid {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 
+                auto
+                auto
+                auto
+                1fr
+                40rem
+            ;
+            grid-template-areas: 
+                "title title social"
+                "projects projects image"
+                "projects projects greeble-1"
+                "projects projects contact"
+                "terminal terminal resources"
+            ;
+            min-height: 100vh;
+        }
+
+        #terminal {
+            display: block;
+        }
+
+        #social {
+            flex-direction: row;
+        }
+
+        #title-text, .job-title {
+            display: block;
+        }
+
+        #title-container {
+            height: 100%;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+}
+
+@media (min-width: 1300px) {
+    
+    #grid {
+        grid-template-columns: 1fr 1fr 20rem;
+        grid-template-rows: 
+            auto
+            auto
+            auto
+            auto
+            auto
+            auto
+        ;
+        grid-template-areas: 
+            "title      title       social"
+            "projects   resources   contact"
+            "projects   resources   greeble-1"
+            "terminal   terminal    image"
+            "terminal   terminal    terminal"
+            "terminal   terminal    terminal"
+        ;
+        height: 100vh;
+    }
+
+    /* #projects, #resources {
+        max-height: 45rem;
+    } */
+
+}
 
 </style>
