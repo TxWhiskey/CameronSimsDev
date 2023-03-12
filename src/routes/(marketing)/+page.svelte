@@ -276,15 +276,13 @@
             auto
             auto
             auto
-            auto
         ;
         grid-template-areas: 
             "title      title       social"
-            "projects   resources   contact"
-            "projects   resources   greeble-1"
-            "terminal   terminal    image"
-            "terminal   terminal    terminal"
-            "terminal   terminal    terminal"
+            "projects   terminal    image"
+            "projects   terminal   greeble-1"
+            "projects   terminal   contact"
+            "projects   terminal    resources"
         ;
         height: 100vh;
     }

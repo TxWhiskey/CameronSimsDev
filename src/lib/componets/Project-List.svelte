@@ -21,7 +21,7 @@
 
     function resetTimer() {
         clearInterval(timer)
-        timer = setInterval( incrementProject, 115000)
+        timer = setInterval( incrementProject, 15000)
     }
 
     function handleNext() {
