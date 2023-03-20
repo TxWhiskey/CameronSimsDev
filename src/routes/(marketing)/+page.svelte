@@ -274,7 +274,7 @@
             auto
             auto
             auto
-            auto
+            minmax(15rem, auto)
             auto
         ;
         grid-template-areas: 

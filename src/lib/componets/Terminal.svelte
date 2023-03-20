@@ -130,6 +130,12 @@
         outline: none;
     }
 
+    .input-row:hover, .input-row:hover input {
+        background-color: var(--color-mid);
+        color: var(--color-vdark);
+    }
+
+
     @keyframes fade-out {
         0% {
             background-color: var(--color-dark);
