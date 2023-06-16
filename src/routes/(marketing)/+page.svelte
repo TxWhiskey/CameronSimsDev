@@ -34,7 +34,7 @@
                 LinkedIn
             </a>
             <a 
-                href="https://github.com/GeorgiaGrace" 
+                href="https://github.com/TxWhiskey" 
                 class="button-link" 
                 target="_blank" 
                 rel="noreferrer">
