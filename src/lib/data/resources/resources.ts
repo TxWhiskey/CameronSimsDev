@@ -51,8 +51,8 @@ export let resources: Resource[] = [
         link: "https://www.vecteezy.com/"
     },
     {
-        title: "Yofou.dev",
+        title: "Nathan",
         type: "Network",
-        link: "https://www.yofou.dev/"
+        link: "https://nathan.software/"
     },
 ]

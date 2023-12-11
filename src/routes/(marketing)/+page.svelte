@@ -33,7 +33,7 @@
                 rel="noreferrer">
                 LinkedIn
             </a>
-            <a 
+            <a
                 href="https://github.com/TxWhiskey" 
                 class="button-link" 
                 target="_blank" 
